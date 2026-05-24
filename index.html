@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T.S. Lim Trading — Kasut Manek, Melaka</title>
+  <meta name="description" content="Hand-beaded Peranakan shoes from a single workshop on Jalan Tokong, Melaka. Made by Lim Tian Seng since 2000. UNESCO Award of Excellence 2012." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ─────────────────────────────────────────────── */
+    :root {
+      /* Brand / accent */
+      --primary:               #cc785c;
+      --primary-active:        #a9583e;
+      --primary-disabled:      #e6dfd8;
+      --accent-teal:           #5db8a6;
+      --accent-amber:          #e8a55a;
+
+      /* Surfaces */
+      --canvas:                #faf9f5;
+      --surface-soft:          #f5f0e8;
+      --surface-card:          #efe9de;
+      --surface-cream-strong:  #e8e0d2;
+      --surface-dark:          #181715;
+      --surface-dark-elevated: #252320;
+      --surface-dark-soft:     #1f1e1b;
+
+      /* Hairlines */
+      --hairline:              #e6dfd8;
+      --hairline-soft:         #ebe6df;
+
+      /* Text */
+      --ink:                   #141413;
+      --body-strong:           #252523;
+      --body:                  #3d3d3a;
+      --muted:                 #6c6a64;
+      --muted-soft:            #8e8b82;
+      --on-primary:            #ffffff;
+      --on-dark:               #faf9f5;
+      --on-dark-soft:          #a09d96;
+
+      /* Radii */
+      --r-xs:   4px;
+      --r-sm:   6px;
+      --r-md:   8px;
+      --r-lg:   12px;
+      --r-xl:   16px;
+      --r-pill: 9999px;
+
+      /* Spacing */
+      --s-xxs:     4px;
+      --s-xs:      8px;
+      --s-sm:      12px;
+      --s-md:      16px;
+      --s-lg:      24px;
+      --s-xl:      32px;
+      --s-xxl:     48px;
+      --s-section: 96px;
+
+      /* Type families */
+      --serif: 'Cormorant Garamond', 'Tiempos Headline', Garamond, 'Times New Roman', serif;
+      --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --mono:  'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    /* ── RESET ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.55;
+      letter-spacing: 0;
+      background: var(--canvas);
+      color: var(--body);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    :focus { outline: none; }
+    :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 2px; }
+
+    /* ── TYPE ───────────────────────────────────────────────── */
+    .display-xl,
+    .display-lg,
+    .display-md,
+    .display-sm {
+      font-family: var(--serif);
+      font-weight: 500;       /* Cormorant 500 ≈ Copernicus 400 weight */
+      color: var(--ink);
+    }
+    .display-xl { font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.025em; }
+    .display-lg { font-size: clamp(34px, 4.4vw, 48px); line-height: 1.1;  letter-spacing: -0.02em; }
+    .display-md { font-size: clamp(28px, 3.4vw, 36px); line-height: 1.15; letter-spacing: -0.015em; }
+    .display-sm { font-size: clamp(22px, 2.6vw, 28px); line-height: 1.2;  letter-spacing: -0.01em; }
+
+    .title-lg { font-size: 22px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+    .title-md { font-size: 18px; font-weight: 500; line-height: 1.4; color: var(--ink); }
+    .title-sm { font-size: 16px; font-weight: 500; line-height: 1.4; color: var(--ink); }
+
+    .body-md { font-size: 16px; line-height: 1.55; color: var(--body); }
+    .body-sm { font-size: 14px; line-height: 1.55; color: var(--body); }
+
+    .caption          { font-size: 13px; font-weight: 500; line-height: 1.4; color: var(--muted); }
+    .caption-up       { font-size: 12px; font-weight: 500; line-height: 1.4; letter-spacing: 0.125em; text-transform: uppercase; color: var(--muted); }
+    .caption-up-coral { color: var(--primary); }
+    .mono             { font-family: var(--mono); font-size: 14px; line-height: 1.6; }
+
+    .text-link {
+      color: var(--primary);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    .text-link:hover { border-bottom-color: var(--primary); }
+
+    /* ── LAYOUT ─────────────────────────────────────────────── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+    .container--narrow { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+    .section { padding: var(--s-section) 0; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 12px; font-weight: 500; line-height: 1.4;
+      letter-spacing: 0.125em; text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: var(--s-lg);
+    }
+    .eyebrow::before {
+      content: ''; display: inline-block;
+      width: 18px; height: 1px;
+      background: var(--primary);
+    }
+
+    /* Spike mark — a 4-spoke radial inspired by Anthropic's wordmark glyph */
+    .mark {
+      display: inline-block; width: 14px; height: 14px;
+      flex-shrink: 0;
+    }
+
+    /* ── NAV ────────────────────────────────────────────────── */
+    nav.top-nav {
+      position: sticky; top: 0; z-index: 100;
+      height: 64px;
+      background: var(--canvas);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.25s ease, background 0.25s ease;
+    }
+    nav.top-nav.scrolled {
+      border-bottom-color: var(--hairline);
+      background: rgba(250,249,245,0.92);
+      backdrop-filter: blur(10px);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; height: 100%;
+      padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 32px;
+    }
+    .nav-brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--sans); font-size: 15px; font-weight: 500; letter-spacing: 0.01em;
+      color: var(--ink);
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: var(--body);
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 40px; padding: 0 20px;
+      background: var(--primary); color: var(--on-primary);
+      font-size: 14px; font-weight: 500; line-height: 1;
+      border-radius: var(--r-md);
+      transition: background 0.18s ease;
+    }
+    .nav-cta:hover { background: var(--primary-active); }
+
+    /* ── HERO ───────────────────────────────────────────────── */
+    .hero {
+      padding: var(--s-section) 0 var(--s-section);
+    }
+    .hero-grid {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0 32px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
+    }
+    .hero-text { max-width: 540px; }
+    .hero h1 {
+      margin: 16px 0 24px;
+    }
+    .hero-sub {
+      font-size: 18px; line-height: 1.55; color: var(--body-strong);
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 44px; padding: 0 22px;
+      background: var(--primary); color: var(--on-primary);
+      font-size: 14px; font-weight: 500; line-height: 1;
+      border-radius: var(--r-md); border: none; cursor: pointer;
+      transition: background 0.18s ease;
+    }
+    .btn-primary:hover { background: var(--primary-active); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 44px; padding: 0 22px;
+      background: var(--canvas); color: var(--ink);
+      font-size: 14px; font-weight: 500; line-height: 1;
+      border-radius: var(--r-md); border: 1px solid var(--hairline);
+      transition: border-color 0.18s ease;
+    }
+    .btn-secondary:hover { border-color: var(--ink); }
+    .hero-illustration-card {
+      background: var(--surface-card);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      aspect-ratio: 5 / 6;
+      position: relative;
+    }
+    .hero-illustration-card img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .hero-meta {
+      max-width: 1200px; margin: 48px auto 0;
+      padding: 0 32px;
+      display: flex; justify-content: space-between; align-items: baseline;
+      color: var(--muted);
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.125em; text-transform: uppercase;
+      border-top: 1px solid var(--hairline);
+      padding-top: 24px;
+    }
+
+    /* ── COLLECTION (cream feature cards) ───────────────────── */
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 64px;
+    }
+    .section-head h2 { margin-bottom: 16px; }
+    .section-head p { font-size: 18px; color: var(--body-strong); }
+
+    .grades {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .grade-card {
+      background: var(--surface-card);
+      border-radius: var(--r-lg);
+      padding: var(--s-xl);
+      display: flex; flex-direction: column;
+    }
+    .grade-card .grade-img {
+      width: 100%; aspect-ratio: 4 / 3;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      background: var(--surface-cream-strong);
+      margin-bottom: 24px;
+    }
+    .grade-card .grade-img img { width: 100%; height: 100%; object-fit: cover; }
+    .grade-card .grade-tag {
+      display: inline-flex; align-items: center;
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.125em; text-transform: uppercase;
+      color: var(--primary);
+      background: var(--canvas);
+      padding: 4px 12px;
+      border-radius: var(--r-pill);
+      align-self: flex-start;
+      margin-bottom: 16px;
+    }
+    .grade-card h3 { margin-bottom: 8px; }
+    .grade-card .grade-meta {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .grade-card p {
+      color: var(--body);
+      font-size: 15px; line-height: 1.6;
+    }
+
+    /* ── MAKER (dark navy product card) ─────────────────────── */
+    .maker-band {
+      background: var(--surface-dark);
+      color: var(--on-dark);
+      border-radius: var(--r-lg);
+      padding: var(--s-xl) var(--s-xl);
+      margin: 0 32px;
+      max-width: 1200px;
+      margin-left: auto; margin-right: auto;
+    }
+    .maker-grid {
+      display: grid; grid-template-columns: 1.1fr 1fr;
+      gap: 64px; align-items: center;
+      padding: 32px;
+    }
+    .maker-text .eyebrow { color: var(--accent-amber); }
+    .maker-text .eyebrow::before { background: var(--accent-amber); }
+    .maker-text h2 {
+      color: var(--on-dark);
+      margin-bottom: 24px;
+    }
+    .maker-text p {
+      color: var(--on-dark-soft);
+      font-size: 17px; line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .maker-fact-row {
+      margin-top: 32px;
+      border-top: 1px solid var(--surface-dark-elevated);
+      padding-top: 24px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .maker-fact .label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--on-dark-soft);
+      margin-bottom: 6px;
+    }
+    .maker-fact .value {
+      font-family: var(--serif);
+      font-size: 26px; font-weight: 500;
+      color: var(--on-dark);
+      letter-spacing: -0.01em;
+    }
+    .maker-portrait {
+      border-radius: var(--r-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: var(--surface-dark-soft);
+    }
+    .maker-portrait img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* ── PROCESS (cream feature explanations) ───────────────── */
+    .process-hero {
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 64px;
+      background: var(--surface-cream-strong);
+    }
+    .process-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .process-list {
+      display: grid; grid-template-columns: 1fr;
+      gap: 0;
+      border-top: 1px solid var(--hairline);
+    }
+    .process-step {
+      display: grid; grid-template-columns: 64px 1fr 2fr;
+      gap: 32px;
+      padding: 40px 0;
+      border-bottom: 1px solid var(--hairline);
+      align-items: start;
+    }
+    .icon-circle {
+      width: 48px; height: 48px;
+      border-radius: var(--r-pill);
+      background: var(--surface-cream-strong);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--ink);
+      flex-shrink: 0;
+    }
+    .icon-circle svg { width: 22px; height: 22px; }
+    .step-num {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--primary);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .process-step h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 26px;
+      color: var(--ink);
+      letter-spacing: -0.015em;
+    }
+    .process-step p {
+      color: var(--body);
+      font-size: 16px;
+      line-height: 1.6;
+      padding-top: 6px;
+    }
+
+    /* ── RECOGNITION (cream cards with hairline) ────────────── */
+    .recognition-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .rec-card {
+      background: var(--canvas);
+      border: 1px solid var(--hairline);
+      border-radius: var(--r-lg);
+      padding: var(--s-xl);
+    }
+    .rec-card .icon-circle { margin-bottom: 24px; }
+    .rec-mark {
+      height: 48px;
+      display: flex; align-items: center;
+      margin-bottom: 24px;
+    }
+    .rec-mark img {
+      max-height: 40px;
+      max-width: 220px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    .rec-mark--compact img { max-height: 48px; }
+    .rec-card .year {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .rec-card h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 22px;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+    .rec-card p {
+      font-size: 14px;
+      color: var(--body);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .rec-card .source {
+      font-size: 13px;
+      color: var(--primary);
+    }
+
+    /* ── PRESS (as seen in) ─────────────────────────────────── */
+    .press-strip {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      border-top: 1px solid var(--hairline);
+      border-bottom: 1px solid var(--hairline);
+      padding: var(--s-xl) 0;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .press-strip::-webkit-scrollbar { display: none; }
+    .press-item {
+      flex: 0 0 280px;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 8px var(--s-lg);
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .press-item + .press-item {
+      border-left: 1px solid var(--hairline-soft);
+    }
+    .press-logo {
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .press-logo img {
+      max-height: 36px;
+      max-width: 200px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    .press-logo-text {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .press-meta {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted-soft);
+      text-align: center;
+      line-height: 1.4;
+    }
+    .press-archive {
+      margin-top: var(--s-xl);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px var(--s-lg);
+      align-items: baseline;
+    }
+    .press-archive-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .press-archive a {
+      font-size: 14px;
+      color: var(--body);
+      text-decoration: none;
+      border-bottom: 1px solid var(--hairline);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .press-archive a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* ── DOCUMENTARY (dark mockup card) ─────────────────────── */
+    .doc-card {
+      background: var(--surface-dark);
+      color: var(--on-dark);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    .doc-text {
+      padding: 64px 48px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .doc-text .eyebrow { color: var(--accent-teal); }
+    .doc-text .eyebrow::before { background: var(--accent-teal); }
+    .doc-text h2 { color: var(--on-dark); margin-bottom: 16px; }
+    .doc-text p { color: var(--on-dark-soft); font-size: 16px; line-height: 1.6; margin-bottom: 24px; }
+    .doc-watch {
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 44px; padding: 0 22px;
+      background: var(--surface-dark-elevated);
+      color: var(--on-dark);
+      font-size: 14px; font-weight: 500; line-height: 1;
+      border-radius: var(--r-md);
+      align-self: flex-start;
+      transition: background 0.18s ease;
+    }
+    .doc-watch:hover { background: #2f2c28; }
+    .doc-thumb {
+      background: var(--surface-dark-soft);
+      position: relative;
+      min-height: 380px;
+    }
+    .doc-thumb img {
+      width: 100%; height: 100%; object-fit: cover;
+      position: absolute; inset: 0;
+    }
+
+    /* ── COMMISSION (full-bleed coral callout) ──────────────── */
+    .commission-card {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-radius: var(--r-lg);
+      padding: 64px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .commission-inner {
+      max-width: 720px;
+    }
+    .commission-card .eyebrow { color: rgba(255,255,255,0.85); }
+    .commission-card .eyebrow::before { background: rgba(255,255,255,0.85); }
+    .commission-card h2 { color: var(--on-primary); margin-bottom: 24px; }
+    .commission-card p {
+      color: rgba(255,255,255,0.92);
+      font-size: 17px; line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .commission-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      height: 44px; padding: 0 22px;
+      background: var(--canvas); color: var(--ink);
+      font-size: 14px; font-weight: 500; line-height: 1;
+      border-radius: var(--r-md);
+      margin-top: 16px;
+      transition: background 0.18s ease;
+    }
+    .commission-cta:hover { background: #fff; }
+
+    /* ── VISIT (cream — info + map) ─────────────────────────── */
+    .visit-grid {
+      display: grid; grid-template-columns: 1fr 1.1fr;
+      gap: 48px;
+      align-items: stretch;
+    }
+    .visit-info { padding-right: 24px; }
+    .visit-info h2 { margin-bottom: 32px; }
+    .visit-row {
+      display: grid; grid-template-columns: 100px 1fr;
+      gap: 24px;
+      padding: 16px 0;
+      border-top: 1px solid var(--hairline);
+      align-items: baseline;
+    }
+    .visit-row:last-child { border-bottom: 1px solid var(--hairline); }
+    .visit-label {
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .visit-value { font-size: 15px; color: var(--ink); line-height: 1.6; }
+    .visit-value a { color: var(--primary); }
+    .visit-map {
+      border: 1px solid var(--hairline);
+      border-radius: var(--r-lg);
+      width: 100%; min-height: 440px;
+      filter: grayscale(0.18) contrast(0.97);
+    }
+
+    /* ── FOOTER (dark navy) ─────────────────────────────────── */
+    footer {
+      background: var(--surface-dark);
+      color: var(--on-dark-soft);
+      padding: 64px 0 40px;
+      margin-top: 96px;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 32px;
+    }
+    .footer-top {
+      display: flex; align-items: center; gap: 12px;
+      color: var(--on-dark);
+      margin-bottom: 48px;
+    }
+    .footer-top .brand-name {
+      font-family: var(--sans); font-size: 15px; font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--surface-dark-elevated);
+    }
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.125em; text-transform: uppercase;
+      color: var(--on-dark);
+      margin-bottom: 20px;
+    }
+    .footer-col p, .footer-col a {
+      display: block;
+      font-size: 14px; line-height: 1.7;
+      color: var(--on-dark-soft);
+      margin-bottom: 4px;
+      transition: color 0.18s ease;
+    }
+    .footer-col a:hover { color: var(--on-dark); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 24px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--on-dark-soft);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      :root { --s-section: 72px; }
+      .container, .container--narrow { padding: 0 24px; }
+      .nav-inner { padding: 0 24px; gap: 16px; }
+      .nav-links { display: none; }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; }
+      .hero-illustration-card { aspect-ratio: 4 / 5; }
+      .hero-meta { padding: 24px 24px 0; flex-direction: column; gap: 8px; align-items: flex-start; }
+      .grades { grid-template-columns: 1fr; gap: 16px; }
+      .maker-band { margin: 0 24px; }
+      .maker-grid { grid-template-columns: 1fr; gap: 32px; padding: 16px; }
+      .maker-fact-row { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .process-step { grid-template-columns: 56px 1fr; gap: 16px 20px; padding: 32px 0; }
+      .process-step .icon-circle { grid-row: 1 / 3; }
+      .process-step .step-label { grid-column: 2; grid-row: 1; }
+      .process-step p { grid-column: 2; grid-row: 2; padding-top: 0; }
+      .recognition-grid { grid-template-columns: 1fr; }
+      .press-strip { padding: 24px 0; }
+      .press-item { flex: 0 0 220px; padding: 8px var(--s-md); }
+      .doc-card { grid-template-columns: 1fr; }
+      .doc-text { padding: 40px 32px; }
+      .doc-thumb { min-height: 240px; }
+      .commission-card { padding: 48px 32px; margin: 0 24px; }
+      .visit-grid { grid-template-columns: 1fr; gap: 32px; }
+      .visit-info { padding-right: 0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+    }
+    @media (max-width: 560px) {
+      .container, .container--narrow { padding: 0 20px; }
+      .nav-inner { padding: 0 20px; }
+      .hero-grid { padding: 0 20px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────── -->
+<nav class="top-nav" id="topNav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#">
+      T.S. Lim Trading
+    </a>
+    <ul class="nav-links">
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#maker">Maker</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#recognition">Recognition</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="nav-cta" href="#commission">Commission</a>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Kasut Manek · Melaka</span>
+      <h1 class="display-xl">A pair of shoes, beaded by one hand.</h1>
+      <p class="hero-sub">
+        Hand-beaded Peranakan shoes from a single workshop on Jalan Tokong,
+        Melaka. Drawn from memory, beaded one glass seed at a time, by
+        Lim Tian Seng — since 2000.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#collection">
+          View the Collection <span aria-hidden="true">→</span>
+        </a>
+        <a class="btn-secondary" href="#maker">Read his story</a>
+      </div>
+    </div>
+    <div class="hero-illustration-card">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="assets/photos/hero-rack-480.webp 480w, assets/photos/hero-rack-960.webp 960w, assets/photos/hero-rack-1600.webp 1600w"
+          sizes="(max-width: 960px) 100vw, 50vw" />
+        <img
+          src="assets/photos/hero-rack-960.jpg"
+          srcset="assets/photos/hero-rack-480.jpg 480w, assets/photos/hero-rack-960.jpg 960w, assets/photos/hero-rack-1600.jpg 1600w"
+          sizes="(max-width: 960px) 100vw, 50vw"
+          alt="Rows of finished Kasut Manek slippers on the workshop racks, in jewel-tone beadwork."
+          loading="eager"
+          decoding="async" />
+      </picture>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <span>UNESCO Award of Excellence · 2012</span>
+    <span>Est. 2000 · 63 Jalan Tokong</span>
+  </div>
+</section>
+
+<!-- ── COLLECTION ──────────────────────────────────────────── -->
+<section class="section" id="collection">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Collection</span>
+      <h2 class="display-lg">Three grades of patience.</h2>
+      <p>
+        Every pair is a commission. Choose by how long it will take — five
+        days, one month, or two months — and the maker will draw the
+        pattern fresh for you.
+      </p>
+    </div>
+
+    <div class="grades">
+      <article class="grade-card">
+        <div class="grade-img">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="assets/photos/collection-detail-480.webp 480w, assets/photos/collection-detail-960.webp 960w, assets/photos/collection-detail-1600.webp 1600w"
+              sizes="(max-width: 960px) 100vw, 33vw" />
+            <img
+              src="assets/photos/collection-detail-960.jpg"
+              srcset="assets/photos/collection-detail-480.jpg 480w, assets/photos/collection-detail-960.jpg 960w, assets/photos/collection-detail-1600.jpg 1600w"
+              sizes="(max-width: 960px) 100vw, 33vw"
+              alt="A finished Manik Kasar slipper face, hand-beaded in a floral motif."
+              loading="lazy"
+              decoding="async" />
+          </picture>
+        </div>
+        <span class="grade-tag">Grade I · Coarse</span>
+        <h3 class="display-sm">Manik Kasar</h3>
+        <div class="grade-meta">5–10 days per pair</div>
+        <p>
+          Signature Peranakan motifs in coarse glass beads. Drawn from
+          memory, balanced across both shoes without a template.
+        </p>
+      </article>
+
+      <article class="grade-card">
+        <div class="grade-img">
+          <img src="https://www.emily2u.com/wp-content/uploads/2019/05/8-TS-Lim.jpg.webp" alt="Manik Halus — fine bead" />
+        </div>
+        <span class="grade-tag">Grade II · Fine</span>
+        <h3 class="display-sm">Manik Halus</h3>
+        <div class="grade-meta">Approximately one month</div>
+        <p>
+          Finer beadwork at a denser stitch count. The same vocabulary
+          of motifs at a quieter, more saturated level of resolution.
+        </p>
+      </article>
+
+      <article class="grade-card">
+        <div class="grade-img">
+          <img src="https://www.emily2u.com/wp-content/uploads/2019/05/9-TS-Lim.jpg.webp" alt="Manek Potong — cut bead" />
+        </div>
+        <span class="grade-tag">Grade III · Cut Bead</span>
+        <h3 class="display-sm">Manek Potong</h3>
+        <div class="grade-meta">Up to two months</div>
+        <p>
+          Faceted, hand-cut beads that catch light from every direction.
+          Accepted selectively. The hardest stitch in the workshop.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── MAKER (dark band) ───────────────────────────────────── -->
+<section class="section" id="maker" style="padding-top: 0;">
+  <div class="maker-band">
+    <div class="maker-grid">
+      <div class="maker-text">
+        <span class="eyebrow">The Maker</span>
+        <h2 class="display-lg">Lim Tian Seng. <br/>Half a century with beads in hand.</h2>
+        <p>
+          He apprenticed at fourteen, opened the shop on Jalan Tokong in
+          2000, and has been beading there every day since. There is no
+          assistant. The pattern, the colour selection, the stitching —
+          all of it is his hand.
+        </p>
+        <p>
+          He is the last maker in Melaka who designs and beads the Manik
+          face himself.
+        </p>
+
+        <div class="maker-fact-row">
+          <div class="maker-fact">
+            <div class="label">Bench since</div>
+            <div class="value">2000</div>
+          </div>
+          <div class="maker-fact">
+            <div class="label">Pairs per month</div>
+            <div class="value">≈ 70</div>
+          </div>
+          <div class="maker-fact">
+            <div class="label">Successor</div>
+            <div class="value">None</div>
+          </div>
+        </div>
+      </div>
+      <div class="maker-portrait">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/photos/maker-portrait-480.webp 480w, assets/photos/maker-portrait-960.webp 960w"
+            sizes="(max-width: 960px) 100vw, 45vw" />
+          <img
+            src="assets/photos/maker-portrait-960.jpg"
+            srcset="assets/photos/maker-portrait-480.jpg 480w, assets/photos/maker-portrait-960.jpg 960w"
+            sizes="(max-width: 960px) 100vw, 45vw"
+            alt="Lim Tian Seng at his workbench, holding a beading frame, with the Anugerah Kraf Negara certificate on the wall behind him."
+            loading="lazy"
+            decoding="async" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ─────────────────────────────────────────────── -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Craft</span>
+      <h2 class="display-lg">Five steps. One pair of shoes.</h2>
+    </div>
+
+    <div class="process-hero">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="assets/photos/process-beading-480.webp 480w, assets/photos/process-beading-960.webp 960w, assets/photos/process-beading-1600.webp 1600w"
+          sizes="(max-width: 960px) 100vw, 1200px" />
+        <img
+          src="assets/photos/process-beading-960.jpg"
+          srcset="assets/photos/process-beading-480.jpg 480w, assets/photos/process-beading-960.jpg 960w, assets/photos/process-beading-1600.jpg 1600w"
+          sizes="(max-width: 960px) 100vw, 1200px"
+          alt="Lim Tian Seng beading at his workbench, embroidery hoop in hand, in front of a wall of in-progress shoe faces."
+          loading="lazy"
+          decoding="async" />
+      </picture>
+    </div>
+
+    <div class="process-list">
+      <div class="process-step">
+        <div class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="3" width="14" height="18" rx="1"/>
+            <path d="M7 10c1.5-1.5 3 1.5 4.5 0s2-1 2-1"/>
+            <path d="M7 14c1.5-1.5 3 1.5 4.5 0"/>
+            <circle cx="14.5" cy="6.5" r="0.7" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <div class="step-label">
+          <div class="step-num">Step 01</div>
+          <h3>Pattern</h3>
+        </div>
+        <p>
+          The motif is drawn by hand on tracing paper, balanced across
+          both shoes without symmetry tools — peonies, phoenixes,
+          butterflies, lattice borders.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="6" cy="12" r="2.6"/>
+            <circle cx="12" cy="12" r="2.6"/>
+            <circle cx="18" cy="12" r="2.6"/>
+          </svg>
+        </div>
+        <div class="step-label">
+          <div class="step-num">Step 02</div>
+          <h3>Bead selection</h3>
+        </div>
+        <p>
+          Glass seed beads sourced by the gross, sorted by hand under
+          daylight. Colour is chosen to age — Peranakan palettes deepen,
+          they do not fade.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5.5 18.5L18 6"/>
+            <path d="M15.5 3.5l4.5 4.5"/>
+            <circle cx="5.5" cy="18.5" r="1.3"/>
+            <path d="M9 13l-2 2"/>
+          </svg>
+        </div>
+        <div class="step-label">
+          <div class="step-num">Step 03</div>
+          <h3>Stitching</h3>
+        </div>
+        <p>
+          One bead, one stitch, repeated for the count of the design.
+          A Manik Halus face holds upwards of twelve thousand beads.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 15c0-3 3-7 8-7 4 0 9 1 9 3.5 0 2-3 2.5-5 2.5-2 0-3 0.5-4 1.5s-3 1-5 1c-2 0-3-0.5-3-1.5z"/>
+          </svg>
+        </div>
+        <div class="step-label">
+          <div class="step-num">Step 04</div>
+          <h3>Lasting</h3>
+        </div>
+        <p>
+          The beaded face is shaped over a wooden last, lined, and
+          attached to the sole — leather or fabric, finished by the
+          maker's own hand.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="icon-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3h9l3 3v15H6z"/>
+            <path d="M15 3v3h3"/>
+            <path d="M9 11h6M9 14h6M9 17h3"/>
+          </svg>
+        </div>
+        <div class="step-label">
+          <div class="step-num">Step 05</div>
+          <h3>Provenance</h3>
+        </div>
+        <p>
+          Each pair leaves with a hand-written card noting the grade,
+          the bead count, and the dates the work began and ended.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RECOGNITION ─────────────────────────────────────────── -->
+<section class="section" id="recognition" style="background: var(--surface-soft);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Recognition</span>
+      <h2 class="display-lg">A quiet trail of honours.</h2>
+    </div>
+
+    <div class="recognition-grid">
+      <article class="rec-card">
+        <div class="rec-mark rec-mark--compact">
+          <img src="assets/unesco.svg" alt="UNESCO" />
+        </div>
+        <div class="year">2012</div>
+        <h3>UNESCO Award of Excellence</h3>
+        <p>
+          UNESCO Asia-Pacific recognition for handicraft excellence —
+          authenticity, innovation, and respect for tradition.
+        </p>
+        <a class="source" href="https://en.unesco.org/" target="_blank" rel="noopener">UNESCO →</a>
+      </article>
+      <article class="rec-card">
+        <div class="rec-mark">
+          <img src="assets/kraftangan-en.svg" alt="Kraftangan Malaysia" />
+        </div>
+        <div class="year">2012</div>
+        <h3>Anugerah Kraf Negara</h3>
+        <p>
+          Malaysia's National Craft Award, conferred for sustained
+          contribution to a recognised heritage craft.
+        </p>
+        <a class="source" href="https://www.kraftangan.gov.my/" target="_blank" rel="noopener">Kraftangan Malaysia →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRESS (as seen in) ──────────────────────────────────── -->
+<section class="section" id="press" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">As seen in</span>
+      <h2 class="display-lg">A quiet trail in print.</h2>
+    </div>
+
+    <div class="press-strip">
+      <a class="press-item" href="https://www.nst.com.my/lifestyle/jom/2018/01/328616/go-beads-love-nsttv" target="_blank" rel="noopener">
+        <span class="press-logo">
+          <img src="assets/press-nst.png" alt="New Straits Times" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <span class="press-logo-text" style="display:none;">New Straits Times</span>
+        </span>
+        <span class="press-meta">Jan 2018</span>
+      </a>
+
+      <a class="press-item" href="https://www.smh.com.au/traveller/inspiration/things-to-do-in-melaka-malaysia-the-threeminute-guide-20180711-h12jdk.html" target="_blank" rel="noopener">
+        <span class="press-logo">
+          <img src="assets/press-smh.svg" alt="Sydney Morning Herald" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <span class="press-logo-text" style="display:none;">Sydney Morning Herald</span>
+        </span>
+        <span class="press-meta">Jul 2018 · Traveller</span>
+      </a>
+
+      <a class="press-item" href="https://www.malaymail.com/news/life/2022/02/18/melaka-beaded-shoemaker-hopes-borders-reopen-so-tourists-can-continue-suppo/2042412" target="_blank" rel="noopener">
+        <span class="press-logo">
+          <img src="assets/press-malaymail.svg" alt="Malay Mail" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <span class="press-logo-text" style="display:none;">Malay Mail</span>
+        </span>
+        <span class="press-meta">Feb 2022</span>
+      </a>
+
+      <a class="press-item" href="https://malaysia.news.yahoo.com/melaka-beaded-shoemaker-hopes-borders-065417437.html" target="_blank" rel="noopener">
+        <span class="press-logo">
+          <img src="assets/press-yahoo.svg" alt="Yahoo News" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <span class="press-logo-text" style="display:none;">Yahoo News</span>
+        </span>
+        <span class="press-meta">Feb 2022</span>
+      </a>
+
+      <a class="press-item" href="https://www.thestar.com.my/lifestyle/culture/2023/06/08/the-bendahari-in-melaka-leads-a-community-initiative-to-showcase-heritage-trades" target="_blank" rel="noopener">
+        <span class="press-logo">
+          <img src="assets/press-thestar.svg" alt="The Star" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <span class="press-logo-text" style="display:none;">The Star</span>
+        </span>
+        <span class="press-meta">Jun 2023</span>
+      </a>
+    </div>
+
+    <div class="press-archive">
+      <span class="press-archive-label">Further reading</span>
+      <a href="https://www.emily2u.com/a-stitch-back-in-time/" target="_blank" rel="noopener">Emily2u — A Stitch Back In Time (2019)</a>
+      <a href="https://parvezish.com/travel/handmade-nyonya-beaded-shoes-malacca/" target="_blank" rel="noopener">Parvez Shaikh — The Dying Art of Handmade Nyonya Beaded Shoes (2018)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOCUMENTARY (dark mockup card) ──────────────────────── -->
+<section class="section" id="documentary" style="padding-top: 0;">
+  <div class="container">
+    <a class="doc-card" href="https://www.youtube.com/watch?v=IUY2bNPh-yI" target="_blank" rel="noopener">
+      <div class="doc-text">
+        <span class="eyebrow">Documentary · 2023</span>
+        <h2 class="display-md">The work itself.</h2>
+        <p>
+          A record of the hands, the beads, and the silence between
+          them. Filmed at the workshop in Melaka.
+        </p>
+        <span class="doc-watch">Watch on YouTube <span aria-hidden="true">→</span></span>
+      </div>
+      <div class="doc-thumb">
+        <img src="https://img.youtube.com/vi/IUY2bNPh-yI/maxresdefault.jpg" alt="Documentary thumbnail" />
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ── COMMISSION (coral callout) ──────────────────────────── -->
+<section class="section" id="commission" style="padding-top: 0;">
+  <div class="commission-card">
+    <div class="commission-inner">
+      <span class="eyebrow">International orders welcome</span>
+      <h2 class="display-lg">Every pair begins with a conversation.</h2>
+      <p>
+        There is no catalogue. There is only what Lim agrees to make.
+        Write with the grade you have in mind — Manik Kasar, Halus, or
+        Manek Potong — and a few notes on the colour world you'd like.
+      </p>
+      <p>
+        Lead times vary by grade. International delivery by insured
+        courier, with full provenance documentation.
+      </p>
+      <a class="commission-cta" href="mailto:tslim1961@yahoo.com.sg">
+        Begin a conversation <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── VISIT ───────────────────────────────────────────────── -->
+<section class="section" id="visit">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Atelier</span>
+      <h2 class="display-lg">63 Jalan Tokong, Melaka.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-info">
+        <div class="visit-row">
+          <div class="visit-label">Hours</div>
+          <div class="visit-value">Daily · 10:00 — 16:00</div>
+        </div>
+        <div class="visit-row">
+          <div class="visit-label">Address</div>
+          <div class="visit-value">63 Jalan Tokong (Temple Street)<br/>75200 Melaka, Malaysia</div>
+        </div>
+        <div class="visit-row">
+          <div class="visit-label">Phone</div>
+          <div class="visit-value"><a href="tel:+60166186989">+60 16-618 6989</a></div>
+        </div>
+        <div class="visit-row">
+          <div class="visit-label">Email</div>
+          <div class="visit-value"><a href="mailto:tslim1961@yahoo.com.sg">tslim1961@yahoo.com.sg</a></div>
+        </div>
+      </div>
+      <iframe
+        class="visit-map"
+        src="https://maps.google.com/maps?q=63+Jalan+Tokong,+75200+Melaka,+Malaysia&output=embed"
+        allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="T.S. Lim Trading on the map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span class="brand-name">T.S. Lim Trading</span>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Workshop</h4>
+        <p>63 Jalan Tokong</p>
+        <p>75200 Melaka</p>
+        <p>Malaysia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:tslim1961@yahoo.com.sg">tslim1961@yahoo.com.sg</a>
+        <a href="tel:+60166186989">+60 16-618 6989</a>
+      </div>
+      <div class="footer-col">
+        <h4>Recognition</h4>
+        <p>UNESCO Award of Excellence, 2012</p>
+        <p>Anugerah Kraf Negara, 2012</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="#collection">Collection</a>
+        <a href="#maker">Maker</a>
+        <a href="#process">Process</a>
+        <a href="#visit">Visit</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Est. 2000 · Melaka · Malaysia</span>
+      <span>© 2026 T.S. Lim Trading</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('topNav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 24);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>
