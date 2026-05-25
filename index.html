@@ -484,12 +484,17 @@
       align-items: center;
       justify-content: center;
     }
-    .press-logo img {
+    .press-logo img,
+    .press-logo object {
       max-height: 36px;
       max-width: 200px;
       width: auto;
       height: auto;
       object-fit: contain;
+    }
+    .press-logo object {
+      height: 36px;
+      pointer-events: none;
     }
     .press-logo-text {
       font-family: var(--serif);
@@ -1070,7 +1075,7 @@
     <div class="press-strip">
       <a class="press-item" href="https://www.nst.com.my/lifestyle/jom/2018/01/328616/go-beads-love-nsttv" target="_blank" rel="noopener">
         <span class="press-logo">
-          <img src="assets/press-nst.png" alt="New Straits Times" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <img src="assets/press-nst.png?v=2" alt="New Straits Times" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
           <span class="press-logo-text" style="display:none;">New Straits Times</span>
         </span>
         <span class="press-meta">Jan 2018</span>
@@ -1078,7 +1083,7 @@
 
       <a class="press-item" href="https://www.smh.com.au/traveller/inspiration/things-to-do-in-melaka-malaysia-the-threeminute-guide-20180711-h12jdk.html" target="_blank" rel="noopener">
         <span class="press-logo">
-          <img src="assets/press-smh.svg" alt="Sydney Morning Herald" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <img src="assets/press-smh.svg?v=2" alt="Sydney Morning Herald" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
           <span class="press-logo-text" style="display:none;">Sydney Morning Herald</span>
         </span>
         <span class="press-meta">Jul 2018 · Traveller</span>
@@ -1086,7 +1091,7 @@
 
       <a class="press-item" href="https://www.malaymail.com/news/life/2022/02/18/melaka-beaded-shoemaker-hopes-borders-reopen-so-tourists-can-continue-suppo/2042412" target="_blank" rel="noopener">
         <span class="press-logo">
-          <img src="assets/press-malaymail.svg" alt="Malay Mail" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+          <img src="assets/press-malaymail.svg?v=2" alt="Malay Mail" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
           <span class="press-logo-text" style="display:none;">Malay Mail</span>
         </span>
         <span class="press-meta">Feb 2022</span>
@@ -1094,16 +1099,18 @@
 
       <a class="press-item" href="https://malaysia.news.yahoo.com/melaka-beaded-shoemaker-hopes-borders-065417437.html" target="_blank" rel="noopener">
         <span class="press-logo">
-          <img src="assets/press-yahoo.svg" alt="Yahoo News" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
-          <span class="press-logo-text" style="display:none;">Yahoo News</span>
+          <object type="image/svg+xml" data="assets/press-yahoo.svg?v=3" aria-label="Yahoo News">
+            <span class="press-logo-text">Yahoo News</span>
+          </object>
         </span>
         <span class="press-meta">Feb 2022</span>
       </a>
 
       <a class="press-item" href="https://www.thestar.com.my/lifestyle/culture/2023/06/08/the-bendahari-in-melaka-leads-a-community-initiative-to-showcase-heritage-trades" target="_blank" rel="noopener">
         <span class="press-logo">
-          <img src="assets/press-thestar.svg" alt="The Star" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
-          <span class="press-logo-text" style="display:none;">The Star</span>
+          <object type="image/svg+xml" data="assets/press-thestar.svg?v=3" aria-label="The Star">
+            <span class="press-logo-text">The Star</span>
+          </object>
         </span>
         <span class="press-meta">Jun 2023</span>
       </a>
