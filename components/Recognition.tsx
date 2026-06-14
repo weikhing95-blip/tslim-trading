@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Recognition() {
   return (
     <section className="section" id="recognition" style={{ background: 'var(--surface-soft)' }}>
