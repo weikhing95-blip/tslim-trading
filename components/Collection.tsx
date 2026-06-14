@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image'
-
 const grades = [
   {
     tag: 'Grade I · Coarse',
@@ -9,7 +7,6 @@ const grades = [
     desc: 'Signature Peranakan motifs in coarse glass beads. Drawn from memory, balanced across both shoes without a template.',
     imgSrc: '/assets/photos/collection-detail-960.jpg',
     imgAlt: 'A finished Manik Kasar slipper face, hand-beaded in a floral motif.',
-    local: true,
   },
   {
     tag: 'Grade II · Fine',
@@ -18,16 +15,14 @@ const grades = [
     desc: 'Finer beadwork at a denser stitch count. The same vocabulary of motifs at a quieter, more saturated level of resolution.',
     imgSrc: '/assets/photos/manik-halus-01.jpg',
     imgAlt: 'Manik Halus — fine bead',
-    local: true,
   },
   {
     tag: 'Grade III · Cut Bead',
     title: 'Manek Potong',
     meta: 'Up to two months',
     desc: 'Faceted, hand-cut beads that catch light from every direction. Accepted selectively. The hardest stitch in the workshop.',
-    imgSrc: 'https://www.emily2u.com/wp-content/uploads/2019/05/9-TS-Lim.jpg.webp',
+    imgSrc: '/assets/photos/manek-potong-01.jpg',
     imgAlt: 'Manek Potong — cut bead',
-    local: false,
   },
 ]
 
@@ -49,18 +44,7 @@ export default function Collection() {
           {grades.map((g) => (
             <article className="grade-card" key={g.title}>
               <div className="grade-img">
-                {g.local ? (
-                  <Image
-                    src={g.imgSrc}
-                    alt={g.imgAlt}
-                    fill
-                    sizes="(max-width: 960px) 100vw, 33vw"
-                    style={{ objectFit: 'cover' }}
-                    loading="lazy"
-                  />
-                ) : (
-                  <img src={g.imgSrc} alt={g.imgAlt} loading="lazy" />
-                )}
+                <img src={g.imgSrc} alt={g.imgAlt} loading="lazy" />
               </div>
               <span className="grade-tag">{g.tag}</span>
               <h3 className="display-sm">{g.title}</h3>
