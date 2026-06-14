@@ -5,8 +5,8 @@ const grades = [
     title: 'Manik Kasar',
     meta: '5–10 days per pair',
     desc: 'Signature Peranakan motifs in coarse glass beads. Drawn from memory, balanced across both shoes without a template.',
-    imgSrc: '/assets/photos/collection-detail-960.jpg',
-    imgAlt: 'A finished Manik Kasar slipper face, hand-beaded in a floral motif.',
+    imgSrc: '/assets/photos/manik-kasar-01.jpg',
+    imgAlt: 'Manik Kasar — coarse bead sandals in pink with geometric motif.',
   },
   {
     tag: 'Grade II · Fine',
