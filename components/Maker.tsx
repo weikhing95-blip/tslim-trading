@@ -30,10 +30,6 @@ export default function Maker() {
                 <div className="label">Pairs per month</div>
                 <div className="value">≈ 70</div>
               </div>
-              <div className="maker-fact">
-                <div className="label">Successor</div>
-                <div className="value">None</div>
-              </div>
             </div>
           </div>
           <div className="maker-portrait">
