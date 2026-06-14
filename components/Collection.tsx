@@ -16,9 +16,9 @@ const grades = [
     title: 'Manik Halus',
     meta: 'Approximately one month',
     desc: 'Finer beadwork at a denser stitch count. The same vocabulary of motifs at a quieter, more saturated level of resolution.',
-    imgSrc: 'https://www.emily2u.com/wp-content/uploads/2019/05/8-TS-Lim.jpg.webp',
+    imgSrc: '/assets/photos/manik-halus-01.jpg',
     imgAlt: 'Manik Halus — fine bead',
-    local: false,
+    local: true,
   },
   {
     tag: 'Grade III · Cut Bead',
