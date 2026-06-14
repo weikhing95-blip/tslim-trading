@@ -2,19 +2,19 @@
 const grades = [
   {
     tag: 'Grade I · Coarse',
-    title: 'Manik Kasar',
+    title: 'Manek Kasar',
     meta: '5–10 days per pair',
     desc: 'Signature Peranakan motifs in coarse glass beads. Drawn from memory, balanced across both shoes without a template.',
-    imgSrc: '/assets/photos/manik-kasar-01.jpg',
-    imgAlt: 'Manik Kasar — coarse bead sandals in pink with geometric motif.',
+    imgSrc: '/assets/photos/manek-kasar-01.jpg',
+    imgAlt: 'Manek Kasar — coarse bead sandals in pink with geometric motif.',
   },
   {
     tag: 'Grade II · Fine',
-    title: 'Manik Halus',
+    title: 'Manek Halus',
     meta: 'Approximately one month',
     desc: 'Finer beadwork at a denser stitch count. The same vocabulary of motifs at a quieter, more saturated level of resolution.',
-    imgSrc: '/assets/photos/manik-halus-01.jpg',
-    imgAlt: 'Manik Halus — fine bead',
+    imgSrc: '/assets/photos/manek-halus-01.jpg',
+    imgAlt: 'Manek Halus — fine bead',
   },
   {
     tag: 'Grade III · Cut Bead',

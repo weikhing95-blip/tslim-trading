@@ -411,7 +411,7 @@ Cream, sticky, 64px tall. Carries the T.S. Lim spike-mark + wordmark at left, ho
 
 ### Grade card
 
-Three-up grid at desktop. Each card is `{colors.surface-card}` background, `{rounded.lg}`, 32px padding, containing: a 4:3 image at `{rounded.md}`, a coral pill tag ("Grade I · Coarse"), a serif display-sm title (Manik Kasar / Halus / Manek Potong), a mono meta line (lead time), a body-md description.
+Three-up grid at desktop. Each card is `{colors.surface-card}` background, `{rounded.lg}`, 32px padding, containing: a 4:3 image at `{rounded.md}`, a coral pill tag ("Grade I · Coarse"), a serif display-sm title (Manek Kasar / Halus / Manek Potong), a mono meta line (lead time), a body-md description.
 
 ### Maker band (dark)
 

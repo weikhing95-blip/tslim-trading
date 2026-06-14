@@ -17,7 +17,7 @@ export default function Maker() {
               all of it is his hand.
             </p>
             <p>
-              He is the last maker in Melaka who designs and beads the Manik
+              He is the last maker in Melaka who designs and beads the Manek
               face himself.
             </p>
 

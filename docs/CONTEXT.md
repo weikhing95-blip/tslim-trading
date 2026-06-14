@@ -88,7 +88,7 @@ A round of factual corrections was applied to `index.html` on 2026-05-24. This s
 - **Siblings:** The consistent fact across sources is that he was **the only sibling to learn beading**. (Exact sibling count appears as both "seven" and "ten" in different sources; user has flagged this as not material — do not surface a specific count in public copy.)
 - **Wife: Susan Hau Fong Lian** — picked up beading after marriage, drawing on a childhood cross-stitch hobby. Susan quote (emily2u 2019): *"I've always loved to stitch so I felt that beading was a natural progression for me."* (Internal reference only — see [§2](#2--corrections-needed-in-indexhtml); brand stays focused on Lim Tian Seng alone.)
 - **Uncle** does the final shoe construction (sole/heel assembly) — per My Melaka FB.
-- **Daughter** — does not intend to continue the craft (user-confirmed 2026-05-24). Use this when framing the succession narrative.
+- **Daughter** — succession uncertain; user's sister (Weikhing's sister) may take over the craft (updated 2026-06-14). Do not frame succession as closed.
 - **Workers:** Present but **not surfaced publicly** (user decision). Internal reference only.
 
 **Signature claim:** He is *"the only maker in Melaka who personally does both the design AND the beading of the manik face"* — most peer shops outsource design or only assemble pre-beaded uppers. Use this precise framing in marketing rather than "the last maker."
@@ -348,7 +348,7 @@ These are non-obvious; they will shape product, photography, and copy decisions.
 
 1. **No-photography policy in the shop — not a constraint for this project.** TS Lim historically refused photography in the workshop because competitors copied his designs. The user (son) has confirmed this is **not a constraint for the e-commerce build** — as family, he has direct access to commission and publish photography. Mention in copy is optional and can be reframed as part of the design-protection story rather than as an operational restriction.
 2. **Production capacity is genuinely limited.** ~70 pairs/month pre-pandemic, fewer now. The site cannot promise "in stock — ships tomorrow" volumes. **Default model: made-to-order / pre-order**, not ready stock.
-3. **The maker is in his mid-60s and there is no successor.** Daughter has confirmed she is not continuing the craft (user-confirmed 2026-05-24). The family's own stated stance is *"we want our children to study and get jobs instead"* (Parvez Shaikh, 2018). This makes the heritage narrative more poignant — and means any e-commerce strategy that requires 10× volume scaling is misaligned with the actual production reality (~70 pairs/month, capped by Lim's own hands). Be careful about scale-narrative copy that conflicts with the family's framing.
+3. **The maker is in his mid-60s and succession is open.** The daughter's plans are uncertain — user's sister may take over the craft (updated 2026-06-14). Do not use "no successor" framing in public copy. The family's own stated stance on involving children in the business (Parvez Shaikh, 2018) should be treated as historical context, not a current position. Production is still capped at ~70 pairs/month by Lim's own hands — any e-commerce strategy requiring significant volume scaling remains misaligned with that reality.
 4. **Two names to disambiguate from in marketing:**
    - **Colourbeads Enterprise** (different Lim family, 84 Jln Tun Tan Cheng Lock, Melaka).
    - **Wah Aik Shoemaker** (Melaka's bound-feet shoe specialist — different craft entirely).
@@ -366,7 +366,7 @@ These are non-obvious; they will shape product, photography, and copy decisions.
 - ✓ **No-photo policy:** Not a constraint for this build.
 - ✓ **Tier naming:** Use **both** Malay and English (e.g., *Manik Kasar — Standard*) to preserve heritage and appeal to wider audiences.
 - ✓ **Production volume:** **~70 pairs/month** is the canonical figure for site copy.
-- ✓ **Daughter / succession:** Daughter is not continuing the craft. There is no successor. Frame the narrative honestly.
+- ✓ **Daughter / succession:** Succession is open — user's sister may take over (updated 2026-06-14). Do not use "no successor" in public copy.
 - ✓ **Workers / sibling count:** Not material to public copy. Removed from doc.
 - ✓ **Hours:** **Daily 10:00–16:00** (per Google Business profile). Note: current `index.html` says 10:00–17:00 — needs to be updated to 16:00.
 - ✓ **NST Jan 2018 "GO: Beads of love"** is an accurate profile of TS Lim (user-confirmed). Anchor outlet for "As seen in" section.

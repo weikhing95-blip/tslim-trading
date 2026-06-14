@@ -22,7 +22,7 @@ A heritage e-commerce landing page for **T.S. Lim Trading**, a hand-beaded Peran
 
 Kasut manek (literally "shoes of beads") are hand-beaded Peranakan slippers — the signature footwear of the Baba Nyonya / Straits Chinese community. Each pair is beaded one glass seed bead at a time onto Aida canvas stretched over a wooden frame (pidangan), then lasted and soled by hand. A single pair holds 10,000–20,000 beads and takes anywhere from five days to two months to complete, depending on the bead tier.
 
-Lim Tian Seng is the only maker in Melaka who personally does both the **design** and the **beading** of the manik face himself.
+Lim Tian Seng is the only maker in Melaka who personally does both the **design** and the **beading** of the manek face himself.
 
 ---
 
@@ -62,7 +62,7 @@ npx serve .
 ## What the landing page covers
 
 - **Hero** — workshop tagline and core value proposition
-- **Craft** — the three bead tiers (Manik Kasar · Manik Halus · Manek Potong)
+- **Craft** — the three bead tiers (Manek Kasar · Manek Halus · Manek Potong)
 - **Maker** — biography of Lim Tian Seng and the studio's heritage
 - **Recognition** — 2012 national and UNESCO awards
 - **As seen in** — press logo strip (NST, SMH, Malay Mail, Yahoo News, The Star)

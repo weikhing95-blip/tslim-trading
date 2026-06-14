@@ -7,7 +7,7 @@ export default function Commission() {
           <h2 className="display-lg">Every pair begins with a conversation.</h2>
           <p>
             There is no catalogue. There is only what Lim agrees to make.
-            Write with the grade you have in mind — Manik Kasar, Halus, or
+            Write with the grade you have in mind — Manek Kasar, Halus, or
             Manek Potong — and a few notes on the colour world you&apos;d like.
           </p>
           <p>

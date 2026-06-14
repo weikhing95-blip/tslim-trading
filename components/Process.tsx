@@ -29,7 +29,7 @@ const steps = [
   {
     num: 'Step 03',
     title: 'Stitching',
-    desc: 'One bead, one stitch, repeated for the count of the design. A Manik Halus face holds upwards of twelve thousand beads.',
+    desc: 'One bead, one stitch, repeated for the count of the design. A Manek Halus face holds upwards of twelve thousand beads.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M5.5 18.5L18 6"/>
