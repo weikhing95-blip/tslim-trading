@@ -3,6 +3,7 @@ const grades = [
   {
     tag: 'Grade I · Coarse',
     title: 'Manek Kasar',
+    price: 'From MYR 388',
     meta: '5–10 days per pair',
     desc: 'Signature Peranakan motifs in coarse glass beads. Drawn from memory, balanced across both shoes without a template.',
     imgSrc: '/assets/photos/manek-kasar-01.jpg',
@@ -11,6 +12,7 @@ const grades = [
   {
     tag: 'Grade II · Fine',
     title: 'Manek Halus',
+    price: 'From MYR 980',
     meta: 'Approximately one month',
     desc: 'Finer beadwork at a denser stitch count. The same vocabulary of motifs at a quieter, more saturated level of resolution.',
     imgSrc: '/assets/photos/manek-halus-01.jpg',
@@ -19,6 +21,7 @@ const grades = [
   {
     tag: 'Grade III · Cut Bead',
     title: 'Manek Potong',
+    price: 'From MYR 3,500',
     meta: 'Up to two months',
     desc: 'Faceted, hand-cut beads that catch light from every direction. Accepted selectively. The hardest stitch in the workshop.',
     imgSrc: '/assets/photos/manek-potong-01.jpg',
@@ -48,6 +51,7 @@ export default function Collection() {
               </div>
               <span className="grade-tag">{g.tag}</span>
               <h3 className="display-sm">{g.title}</h3>
+              <div className="grade-price">{g.price}</div>
               <div className="grade-meta">{g.meta}</div>
               <p>{g.desc}</p>
             </article>

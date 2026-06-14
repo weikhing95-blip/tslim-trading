@@ -257,6 +257,13 @@ nav.top-nav.scrolled {
   margin-bottom: 16px;
 }
 .grade-card h3 { margin-bottom: 8px; }
+.grade-card .grade-price {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
 .grade-card .grade-meta {
   font-family: var(--mono);
   font-size: 13px;
